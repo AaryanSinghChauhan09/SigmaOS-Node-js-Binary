@@ -1,0 +1,16 @@
+# SigmaOS-Node-js-Binary
+
+No GitHub description is set; component scope remains unclassified.
+
+- **Category:** Languages
+- **Engine:** language_runtime
+- **Language:** Rust
+
+## Build & Test
+
+```sh
+cargo build
+cargo test
+```
+
+Part of the SigmaOS multi-repository component ecosystem.

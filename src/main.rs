@@ -1,20 +1,8 @@
-//! SigmaOS-Node-js-Binary - SigmaOS Component
-//! 
-//! This component follows all SigmaOS engineering principles:
-//! - Abstraction, Architecture, Arrange-Act-Assert
-//! - Blackbox, Booch Method, Bootloader Integration
-//! - Boy Scout Rule, Cache Conscious Design
-//! - Clear Abstraction, Code Reusability, Maximize Cohesion
-//! - And many more...
+//! Node-js-Binary component binary.
+//!
+//! Component logic lives in the library crate (`src/lib.rs`); this binary is
+//! a thin entry point kept minimal so the crate builds and tests run.
 
-use anyhow::Result;
-
-fn main() -> Result<()> {
-    env_logger::init();
-    log::info!("Starting SigmaOS-Node-js-Binary");
-    
-    println!("SigmaOS SigmaOS-Node-js-Binary v0.1.0");
-    println!("Following all engineering principles");
-    
-    Ok(())
+fn main() {
+    println!("SigmaOS {} v{}", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
 }
